@@ -1,685 +1,905 @@
 <!DOCTYPE html>
-<html lang="id">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Haris Riyoni — Portfolio & Resume</title>
-  <meta name="description" content="Portofolio & CV Haris Riyoni — Backend / Full‑stack Developer (Laravel, Express.js, Golang, Docker, MySQL, Postgres)">
-  <meta name="keywords" content="Haris Riyoni, Backend Developer, Full‑stack, Laravel, Express, Golang, Docker, MySQL, Postgres, Bandung">
-  <meta name="theme-color" content="#111827" />
-
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Template Info -->
-  <!--
-  * Template Name: SnapFolio
-  * Updated: Jul 21 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  -->
-
-  <style>
-    /* --- Performa & Stabilitas Layout --- */
-    /* Hilangkan preloader supaya tidak pernah menutupi layar (kadang stuck) */
-    #preloader { display: none !important; }
-
-    /* Hindari CLS: gambar profil pakai aspect-ratio */
-    .profile-image { width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; }
-    .profile-card .profile-header img { width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; }
-
-    /* Scroll-top tap area lebih besar */
-    #scroll-top { width: 44px; height: 44px; }
-
-    /* Matikan animasi jika user pilih reduced motion */
-    @media (prefers-reduced-motion: reduce) {
-      [data-aos] { transition: none !important; transform: none !important; opacity: 1 !important; }
-    }
-  </style>
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list" aria-label="Buka menu"></i>
-
-    <div class="header-container d-flex flex-column align-items-start">
-      <nav id="navmenu" class="navmenu" aria-label="Navigasi utama">
-        <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon" aria-hidden="true"></i>Beranda</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon" aria-hidden="true"></i> Tentang</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon" aria-hidden="true"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon" aria-hidden="true"></i> Portofolio</a></li>
-          <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Layanan</a></li> -->
-          <li><a href="#contact"><i class="bi bi-envelope navicon" aria-hidden="true"></i> Kontak</a></li>
-        </ul>
-      </nav>
-
-      <div class="social-links text-center">
-        <a href="mailto:imyharis@gmail.com" class="google-plus" title="Email"><i class="bi bi-envelope" aria-hidden="true"></i><span class="visually-hidden">Email</span></a>
-        <a href="tel:+6285860149271" class="phone" title="Telepon"><i class="bi bi-telephone" aria-hidden="true"></i><span class="visually-hidden">Telepon</span></a>
-        <a href="https://www.linkedin.com/in/harisriyoni/" target="_blank" rel="noopener" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
-      </div>
-
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="background-elements" aria-hidden="true">
-        <div class="bg-circle circle-1"></div>
-        <div class="bg-circle circle-2"></div>
-      </div>
-
-      <div class="hero-content">
-
-        <div class="container">
-          <div class="row align-items-center">
-
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-              <div class="hero-text">
-                <h1>Haris <span class="accent-text">Riyoni</span></h1>
-                <h2>Bandung, Indonesia</h2>
-                <p class="lead">Saya seorang <span class="typed" data-typed-items="Backend Developer, Full‑stack Developer"></span></p>
-                <p class="description">Fresh graduate D4 Teknik Informatika (ULBI) yang antusias meniti karier sebagai Backend/Full‑stack Developer.  Siap berkontribusi pada pengembangan produk.</p>
-
-                <div class="hero-actions d-flex flex-wrap gap-2">
-                  <a href="#portfolio" class="btn btn-primary">Lihat Karya</a>
-                  <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
-                  <a href="assets/cv/haris-riyoni-cv.pdf" class="btn btn-light d-inline-flex align-items-center gap-2" target="_blank" rel="noopener">
-                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
-                    <span>Download CV (PDF)</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-              <div class="hero-visual">
-                <div class="profile-container">
-                  <div class="profile-background" aria-hidden="true"></div>
-                  <img src="assets/img/profile/harisriyoni.JPG" alt="Foto profil Haris Riyoni" class="profile-image rounded" fetchpriority="high" decoding="async">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
-            <div class="profile-card">
-              <div class="profile-header">
-                <div class="profile-image">
-                  <img src="assets/img/profile/harisriyoni.JPG" alt="Haris Riyoni" class="img-fluid rounded" loading="lazy" decoding="async">
-                </div>
-                <div class="profile-badge" aria-hidden="true">
-                  <i class="bi bi-check-circle-fill"></i>
-                </div>
-              </div>
-
-              <div class="profile-content">
-                <h3>Haris Riyoni</h3>
-                <p class="profession">Backend / Full‑stack Developer</p>
-
-                <div class="contact-links">
-                  <a href="mailto:imyharis@gmail.com" class="contact-item">
-                    <i class="bi bi-envelope" aria-hidden="true"></i>
-                    imyharis@gmail.com
-                  </a>
-                  <a href="tel:+6285860149271" class="contact-item">
-                    <i class="bi bi-telephone" aria-hidden="true"></i>
-                    +62 858‑6014‑9271
-                  </a>
-                  <a href="https://www.linkedin.com/in/harisriyoni/" target="_blank" rel="noopener" class="contact-item">
-                    <i class="bi bi-linkedin" aria-hidden="true"></i>
-                    linkedin.com/in/harisriyoni
-                  </a>
-                  <span class="contact-item">
-                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
-                    Bandung, Indonesia
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <div class="section-header">
-                <span class="badge-text">Tentang Saya</span>
-                <h2>Siap berkontribusi pada proyek web yang berdampak</h2>
-              </div>
-
-              <div class="description">
-                <p>Saya adalah fresh graduate D4 Teknik Informatika dari Universitas Logistik dan Bisnis Internasional (ULBI). Berpengalaman pada pengembangan <strong>backend</strong> dan <strong>full‑stack</strong> serta otomasi <strong>CI/CD</strong> dengan Docker.</p>
-                <p>Terbiasa bekerja kolaboratif maupun mandiri, fokus pada kualitas dan maintainability kode, serta antusias mempelajari teknologi baru.</p>
-              </div>
-
-              <div class="details-grid">
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Spesialisasi</span>
-                    <span class="detail-value">Web Development</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Level</span>
-                    <span class="detail-value">Fresh Graduate</span>
-                  </div>
-                </div>
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Pendidikan</span>
-                    <span class="detail-value">D4 Teknik Informatika — ULBI (Lulus 29 Agustus 2025), IPK 3.48</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Hard Skills</span>
-                    <span class="detail-value">PHP (Laravel), JS (Express), Golang, Docker, MySQL, Postgres, MongoDB, Tailwind CSS</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-section d-flex flex-wrap gap-2">
-                <a href="#resume" class="btn btn-primary">
-                  <i class="bi bi-journal-text" aria-hidden="true"></i>
-                  Lihat Resume
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                  <i class="bi bi-chat-dots" aria-hidden="true"></i>
-                  Ayo Diskusi
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Keterampilan Teknis</h2>
-        <p>Ringkasan kemampuan utama dari pengalaman</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3>Front‑end Development</h3>
-              <ul class="list-unstyled skill-list mt-3">
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>HTML5, CSS3, Tailwind CSS</li>
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>JavaScript (ES6+)</li>
-                <!-- <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Blade templating (Laravel)</li> -->
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3>Back‑end & DevOps</h3>
-              <ul class="list-unstyled skill-list mt-3">
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i><strong>PHP</strong> — Laravel </li>
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i><strong>JavaScript</strong> — Express JS</li>
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i><strong>Golang</strong> — Go Fiber</li>
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i><strong>Database</strong> — MySQL, PostgreSQL, MongoDB</li>
-                <li class="mb-2"><i class="bi bi-check2-circle me-2" aria-hidden="true"></i><strong>Docker & CI/CD</strong></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Ringkasan pendidikan, pengalaman, sertifikasi, dan publikasi</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <!-- Left column with summary and contact -->
-          <div class="col-lg-4">
-            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
-              <div class="profile-img mb-4">
-                <img src="assets/img/profile/harisriyoni.JPG" alt="Profil Haris Riyoni" class="img-fluid rounded" loading="lazy" decoding="async">
-              </div>
-
-              <h3>Ringkasan Profesional</h3>
-              <p>Backend/Full‑stack Developer dengan pengalaman magang & freelance: membangun API, CMS, membership & payment, serta CI/CD berbasis Docker. Tertarik pada arsitektur yang rapi, scalable, dan mudah dirawat.</p>
-
-              <h3 class="mt-4">Informasi Kontak</h3>
-              <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Bandung, Indonesia</li>
-                <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:imyharis@gmail.com">imyharis@gmail.com</a></li>
-                <li><i class="bi bi-phone" aria-hidden="true"></i> <a href="tel:+6285860149271">+62 858‑6014‑9271</a></li>
-                <li><i class="bi bi-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/harisriyoni/" target="_blank" rel="noopener">linkedin.com/in/harisriyoni</a></li>
-              </ul>
-
-              <div class="mt-4">
-                <h3>Pendidikan</h3>
-                <div class="resume-item">
-                  <h4>D4 Teknik Informatika — ULBI</h4>
-                  <h5>Lulus: 29 Agustus 2025</h5>
-                  <p>IPK 3.48/4.00</p>
-                  <p><strong>Mata kuliah relevan:</strong> Pemrograman Web, Basis Data, Web Service, Software Quality, Algoritma & Struktur Data, Proyek, RPL.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right column with experience and education -->
-          <div class="col-lg-8 ps-4 ps-lg-5">
-            <!-- Experience Section -->
-            <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2" aria-hidden="true"></i>Pengalaman</h3>
-
-              <div class="resume-item">
-                <h4>Backend Developer — Internship</h4>
-                <h5>Oktober 2024 – Desember 2024</h5>
-                <p class="company"><i class="bi bi-building" aria-hidden="true"></i> PT Hexagon Karyatama Indonesia</p>
-                <ul>
-                  <li>Membangun fitur <strong>Internet Addiction Assessment (IAA)</strong> di backend Laravel (implementasi formula psikolog).</li>
-                  <li>Membangun <strong>CMS Dashboard Backend</strong> untuk Jatidiri.app.</li>
-                </ul>
-                <p class="mt-2"><i class="bi bi-link-45deg" aria-hidden="true"></i> <a href="https://jatidiri.app/" target="_blank" rel="noopener">jatidiri.app</a></p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Backend Developer — Freelance</h4>
-                <h5>Maret 2025 – Mei 2025</h5>
-                <p class="company"><i class="bi bi-building" aria-hidden="true"></i> Desa Sitemu</p>
-                <ul>
-                  <li>Membangun <strong>CMS</strong> untuk sitemubersatu.com menggunakan Express.js & PostgreSQL.</li>
-                  <li>Dockerize aplikasi backend & database; susun <strong>CI/CD workflow</strong>.</li>
-                </ul>
-                <p class="mt-2"><i class="bi bi-link-45deg" aria-hidden="true"></i> <a href="https://sitemubersatu.com/" target="_blank" rel="noopener">sitemubersatu.com</a></p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Full‑stack Developer — Freelance</h4>
-                <h5>Agustus 2025 – September 2025</h5>
-                <p class="company"><i class="bi bi-building" aria-hidden="true"></i> Berkemah</p>
-                <ul>
-                  <li>Fitur <strong>membership & payment</strong>: plan Basic/Premium, Snap token, aktivasi otomatis, coupon code, gating konten.</li>
-                  <li><strong>Checkout Flow</strong>: validasi pembayaran, dashboard membership & riwayat transaksi (Laravel + MySQL).</li>
-                </ul>
-                <p class="mt-2"><i class="bi bi-link-45deg" aria-hidden="true"></i> <a href="https://berkemah.com/" target="_blank" rel="noopener">berkemah.com</a></p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Full‑stack Developer — Freelance</h4>
-                <h5>September 2025 – Oktober 2025</h5>
-                <p class="company"><i class="bi bi-building" aria-hidden="true"></i> ERP Mining BISA</p>
-                <ul>
-                  <li>Modul <strong>SCM</strong>: Trips, Hour Meter, Fuel Log, Weighbridge Tickets, Breakdowns (Blade/Tailwind), filter & pagination, policy site‑based.</li>
-                  <li><strong>Perencanaan & Operasional</strong>: Daily Plan (target ton/ritase per pit & shift), Shift Handover Log, Dispatch & Allocation, Reason Codes.</li>
-                  <li><strong>Master Data</strong>: Sites, Commodities, Site Config (HBA/Ni grade/assay).</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Certifications Section -->
-            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-award me-2" aria-hidden="true"></i>Sertifikasi</h3>
-
-              <div class="resume-item">
-                <h4>Database Design — Oracle Academy</h4>
-                <h5>Agustus 2022</h5>
-              </div>
-
-              <div class="resume-item">
-                <h4>Introduction to JavaScript — Great Learning</h4>
-                <h5>Februari 2023</h5>
-                <p><a href="https://www.mygreatlearning.com/certificate/BDBYXTXX" target="_blank" rel="noopener">Lihat sertifikat</a></p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Belajar Laravel Framework dari Pemula sampai Mahir — Udemy</h4>
-                <h5>Oktober 2024</h5>
-                <p><a href="https://www.udemy.com/certificate/UC-f59d5c28-1185-426a-9eb9-5e1d8af324c7/" target="_blank" rel="noopener">Lihat sertifikat</a></p>
-              </div>
-
-              <div class="resume-item">
-                <h4>Pemrograman Go-Lang: Pemula sampai Mahir — Udemy</h4>
-                <h5>Oktober 2025</h5>
-                <p><a href="https://www.udemy.com/certificate/UC-f570e93d-a4f6-445d-9365-79f32166331e/" target="_blank" rel="noopener">Lihat sertifikat</a></p>
-              </div>
-            </div>
-
-            <!-- Publications Section -->
-            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
-              <h3><i class="bi bi-journal me-2" aria-hidden="true"></i>Publikasi</h3>
-              <div class="resume-item">
-                <h4>Integrasi Golang dan Javascript dalam Pembuatan Web Service Surat Menyurat</h4>
-                <h5>Februari 2024</h5>
-                <p>Gramedia Digital</p>
-                <p><a href="https://ebooks.gramedia.com/id/buku/integrasi-golang-dan-javascript-dalam-pembuatan-web-service-surat-menyurat" target="_blank" rel="noopener">Baca publikasi</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portofolio</h2>
-        <p>Beberapa proyek yang pernah saya kerjakan</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row">
-            <div class="col-lg-3 filter-sidebar">
-              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
-                <ul class="portfolio-filters isotope-filters">
-                  <li data-filter="*" class="filter-active">Semua</li>
-                  <li data-filter=".filter-backend">Backend/API</li>
-                  <li data-filter=".filter-fullstack">Full‑stack</li>
-                  <li data-filter=".filter-devops">DevOps</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-9">
-              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-backend">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/image.png" class="img-fluid" alt="Jatidiri.app" loading="lazy" decoding="async">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Backend/API</span>
-                        <h4>Jatidiri.app — IAA & CMS Backend</h4>
-                        <div class="portfolio-links">
-                          <a href="https://jatidiri.app/" target="_blank" rel="noopener" title="Buka situs"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-fullstack">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/sitemu.png" class="img-fluid" alt="Sitemu CMS" loading="lazy" decoding="async">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Full‑stack</span>
-                        <h4>Desa Sitemu — CMS</h4>
-                        <div class="portfolio-links">
-                          <a href="https://sitemubersatu.com/" target="_blank" rel="noopener" title="Buka situs"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-fullstack">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/berkemah.png" class="img-fluid" alt="Berkemah.com" loading="lazy" decoding="async">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Full‑stack</span>
-                        <h4>Berkemah.com — Membership & Payment</h4>
-                        <div class="portfolio-links">
-                          <a href="https://berkemah.com/" target="_blank" rel="noopener" title="Buka situs"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-fullstack">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/erp.png" class="img-fluid" alt="ERP Mining BISA" loading="lazy" decoding="async">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Full‑stack</span>
-                        <h4>RP Mining BISA — Modul SCM</h4>
-                        <div class="portfolio-links">
-                          <a href="https://orchid-llama-232399.hostingersite.com" target="_blank" rel="noopener" title="Buka situs"><i class="bi bi-box-arrow-up-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-              </div><!-- End Portfolio Container -->
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Layanan</h2>
-        <p>Solusi yang bisa saya bantu untuk tim Anda</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Solusi backend dan</div>
-                  <div><span>pengembangan produk web</span></div>
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  Fokus pada arsitektur rapi, kinerja, dan maintainability.
-                </p>
-                <a href="#contact" class="service-btn">
-                  Diskusikan kebutuhan Anda
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Kontak</h2>
-        <p>Siap berdiskusi tentang peluang kerja atau kolaborasi proyek</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box">
-              <h3>Info Kontak</h3>
-              <p>Hubungi melalui email/telepon atau kirim pesan lewat formulir.</p>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt" aria-hidden="true"></i>
-                </div>
-                <div class="content">
-                  <h4>Lokasi</h4>
-                  <p>Bandung, Indonesia</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone" aria-hidden="true"></i>
-                </div>
-                <div class="content">
-                  <h4>Telepon</h4>
-                  <p>+62 858‑6014‑9271</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="content">
-                  <h4>Email</h4>
-                  <p>imyharis@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form">
-              <h3>Kirim Pesan</h3>
-              <p>Silakan isi form berikut. Saya akan membalas secepatnya.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" novalidate>
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Nama" required autocomplete="name">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required autocomplete="email">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subjek" required>
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Pesan" required></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading" aria-live="polite">Memuat…</div>
-                    <div class="error-message" aria-live="assertive"></div>
-                    <div class="sent-message" aria-live="polite">Pesan Anda telah terkirim. Terima kasih!</div>
-
-                    <button type="submit" class="btn">Kirim</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p> <strong class="px-1 sitename">Haris Riyoni</strong> </p>
-      </div>
-      <div class="credits">
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader (dibiarkan ada tapi disembunyikan via CSS agar JS template tidak error) -->
-  <div id="preloader" hidden></div>
-
-  <!-- Inline boot kecil: fallback typed & hormati reduced-motion -->
-  <script>
-    (function(){
-      var t = document.querySelector('.typed');
-      if (t && !t.textContent.trim()) { t.textContent = 'Backend Developer'; }
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.querySelectorAll('[data-aos]').forEach(function(n){ n.removeAttribute('data-aos'); n.removeAttribute('data-aos-delay'); });
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haris Riyoni — Backend Engineer &amp; Fullstack Developer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Haris Riyoni, a Backend Engineer and Fullstack Developer from Indonesia.">
+    <meta name="theme-color" content="#07080b">
+    <script>
+      try {
+        if (localStorage.getItem("harisriyoni-theme") === "light") {
+          document.documentElement.dataset.theme = "light";
+        }
+      } catch (error) {
+        // Local storage can be unavailable in private browsing; dark mode remains the fallback.
       }
-    })();
-  </script>
+    </script>
+    <link
+      rel="icon"
+      href="assets/img/profile/harisriyoni.png"
+      type="image/png">
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      rel="stylesheet">
+    <link href="assets/css/tailwind.css?v=hero-min-id-1" rel="stylesheet">
+    <link href="assets/js/lanyard.css" rel="stylesheet">
+  </head>
 
-  <!-- Vendor JS Files (defer = non‑blocking) -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/php-email-form/validate.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <body class="site-bg">
+    <header class="fixed inset-x-0 top-4 z-50 px-4 sm:top-6">
+      <nav
+        data-page-nav
+        class="glass-nav mx-auto flex max-w-[1080px] items-center justify-between rounded-full px-3 py-2 sm:px-4"
+        aria-label="Main navigation"
+      >
+        <a
+          href="#hero"
+          class="flex shrink-0 items-center gap-2.5 px-1.5 text-sm font-extrabold tracking-tight text-white sm:text-base"
+          aria-label="Haris Riyoni — Beranda"
+        >
+          <span
+            class="grid size-9 place-items-center rounded-full bg-gradient-to-br from-cyan-300 to-violet-400 text-[10px] font-black text-slate-950 shadow-lg shadow-cyan-400/20"
+            >HR</span
+          >
+          <span>Haris <b class="text-cyan-200">Riyoni</b></span>
+        </a>
+        <div data-desktop-nav class="hidden items-center gap-1 md:flex">
+          <a
+            data-nav-link
+            href="#hero"
+            class="nav-link is-active rounded-full px-3 py-2"
+            title="Home"
+            ><i class="bi bi-house-door" aria-hidden="true"></i
+            ><span>Home</span></a
+          >
+          <a data-nav-link href="#about" class="nav-link rounded-full px-3 py-2" title="About"
+            ><i class="bi bi-person" aria-hidden="true"></i
+            ><span>About</span></a
+          >
+          <a
+            data-nav-link
+            href="#resume"
+            class="nav-link rounded-full px-3 py-2"
+            title="Experience"
+            ><i class="bi bi-briefcase" aria-hidden="true"></i
+            ><span>Experience</span></a
+          >
+          <a
+            data-nav-link
+            href="#projects"
+            class="nav-link rounded-full px-3 py-2"
+            title="Projects"
+            ><i class="bi bi-code-square" aria-hidden="true"></i
+            ><span>Projects</span></a
+          >
+        </div>
+        <div class="hidden items-center gap-2 md:flex">
+          <button
+            type="button"
+            data-theme-toggle
+            class="theme-toggle grid size-9 place-items-center rounded-full"
+            aria-label="Enable light mode"
+            aria-pressed="false"
+            title="Enable light mode"
+          >
+            <i data-theme-icon class="bi bi-sun-fill" aria-hidden="true"></i>
+          </button>
+          <a
+            href="https://github.com/harisriyoni"
+            target="_blank"
+            rel="noopener"
+            class="grid size-9 place-items-center rounded-full border border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white"
+            aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="#contact"
+            class="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-extrabold text-slate-950 hover:bg-cyan-100"
+            ><i class="bi bi-envelope"></i> Contact</a
+          >
+        </div>
+        <button
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          class="grid size-10 place-items-center rounded-full border border-white/10 bg-white/10 text-white md:hidden"
+          aria-label="Open menu"
+        >
+          <i data-menu-icon class="bi bi-list text-lg" aria-hidden="true"></i>
+        </button>
+      </nav>
+      <div
+        data-mobile-menu
+        class="glass-nav mx-auto mt-2 hidden max-w-[1080px] rounded-3xl p-2 md:hidden"
+      >
+        <div class="theme-mobile-row flex items-center justify-between rounded-2xl px-4 py-3">
+          <span class="text-xs font-bold tracking-wide text-slate-400">Appearance</span>
+          <button
+            type="button"
+            data-theme-toggle
+            class="theme-toggle grid size-9 place-items-center rounded-full"
+            aria-label="Enable light mode"
+            aria-pressed="false"
+            title="Enable light mode"
+          >
+            <i data-theme-icon class="bi bi-sun-fill" aria-hidden="true"></i>
+          </button>
+        </div>
+        <a
+          data-nav-link
+          href="#hero"
+          class="nav-link is-active flex rounded-2xl px-4 py-3"
+          ><i class="bi bi-house-door"></i> Home</a
+        >
+        <a
+          data-nav-link
+          href="#about"
+          class="nav-link flex rounded-2xl px-4 py-3"
+          ><i class="bi bi-person"></i> About</a
+        >
+        <a
+          data-nav-link
+          href="#resume"
+          class="nav-link flex rounded-2xl px-4 py-3"
+          ><i class="bi bi-briefcase"></i> Experience</a
+        >
+        <a
+          data-nav-link
+          href="#projects"
+          class="nav-link flex rounded-2xl px-4 py-3"
+          ><i class="bi bi-code-square"></i> Projects</a
+        >
+        <a
+          data-nav-link
+          href="#contact"
+          class="nav-link flex rounded-2xl px-4 py-3"
+          ><i class="bi bi-envelope"></i> Contact</a
+        >
+      </div>
+    </header>
 
-  <!-- Main JS File (defer) -->
-  <script src="assets/js/main.js" defer></script>
+    <main>
+      <section
+        id="hero"
+        class="relative flex min-h-screen items-center overflow-hidden px-5 pb-20 pt-36 sm:px-8 lg:px-12"
+      >
+        <div
+          data-parallax="-16"
+          class="parallax-orb pointer-events-none absolute -right-32 top-20 size-[30rem] rounded-full bg-cyan-300/10 blur-3xl"
+        ></div>
+        <div
+          data-parallax="12"
+          class="parallax-orb pointer-events-none absolute -left-40 bottom-0 size-[28rem] rounded-full bg-violet-500/10 blur-3xl"
+        ></div>
+        <div
+          class="mx-auto grid w-full max-w-[1180px] items-center gap-14 lg:grid-cols-[1.04fr_.96fr] lg:gap-20"
+        >
+          <div data-hero-copy>
+            <span class="eyebrow hero-status rounded-full px-3 py-2"
+              >Open to work</span
+            >
+            <h1
+              data-hero-title
+              class="hero-title mt-7 max-w-3xl font-display text-5xl font-extrabold leading-[.98] tracking-[-.065em] text-white sm:text-7xl lg:text-[5.4rem]"
+            >
+              <span class="hero-name-static">Haris</span>
+              <span class="gradient-text">Riyoni</span>
+            </h1>
+            <p class="hero-intro mt-7 text-base font-semibold sm:text-lg">
+              <span class="hero-intro-muted">I am a</span>
+              <span class="hero-role-switcher" aria-live="polite">
+                <span data-role-rotator class="hero-role-word">Backend Engineer</span>
+              </span>
+            </p>
+            <p
+              class="hero-role mt-3 max-w-2xl text-xl font-bold leading-relaxed text-slate-200 sm:text-2xl"
+            >
+              Building clean, fast, and scalable web systems.
+            </p>
+            <div class="hero-actions mt-8 flex flex-wrap gap-3">
+              <a
+                data-hero-action
+                href="#projects"
+                class="magnetic solid-button inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold"
+                >View my work <i class="bi bi-arrow-up-right"></i
+              ></a>
+              <a
+                data-hero-action
+                href="assets/cv/haris-riyoni-cv.pdf"
+                target="_blank"
+                rel="noopener"
+                class="magnetic outline-button hero-cv-link inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold"
+                aria-label="Download Resume"
+                title="Download Resume"
+                >Download Resume <i class="bi bi-download"></i
+              ></a>
+            </div>
+          </div>
 
-</body>
+          <div
+            data-hero-photo
+            class="relative mx-auto min-h-[560px] w-full max-w-[480px]"
+          >
+            <div
+              class="hero-lanyard-shell relative overflow-visible rounded-[2rem] border border-white/10"
+            >
+              <div id="lanyard-root" class="hero-lanyard relative z-10 h-[560px] w-full sm:h-[630px]" role="img" aria-label="Interactive employee ID lanyard"></div>
+              <div
+                data-lanyard-stage
+                class="hidden pointer-events-none absolute -top-4 left-1/2 z-30 h-[700px] w-[340px] -translate-x-1/2 sm:-top-8"
+              >
+                <svg
+                  class="pointer-events-none absolute inset-0 h-full w-full overflow-visible"
+                  viewBox="0 0 340 700"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient id="lanyardGradient" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#25313d"></stop>
+                      <stop offset=".42" stop-color="#8bf4e9"></stop>
+                      <stop offset="1" stop-color="#9c8cff"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path data-lanyard-rope-shadow d="M170 8 C108 82 232 126 170 288" fill="none" stroke="rgba(0,0,0,.4)" stroke-linecap="round" stroke-width="22"></path>
+                  <path data-lanyard-rope data-lanyard-rope-highlight d="M170 8 C108 82 232 126 170 288" fill="none" stroke="url(#lanyardGradient)" stroke-linecap="round" stroke-width="13"></path>
+                  <path data-lanyard-rope-glint d="M170 8 C108 82 232 126 170 288" fill="none" stroke="rgba(255,255,255,.42)" stroke-linecap="round" stroke-width="2"></path>
+                  <circle cx="170" cy="8" r="6" fill="#8bf4e9"></circle>
+                </svg>
+                <button
+                  data-lanyard-card
+                  type="button"
+                  class="lanyard-card pointer-events-auto absolute left-1/2 top-[230px] h-[330px] w-[245px] -translate-x-1/2 cursor-grab rounded-[1.6rem] text-left active:cursor-grabbing sm:top-[280px] sm:h-[360px] sm:w-[270px]"
+                  aria-label="Drag and rotate Haris Riyoni's photo"
+                  aria-pressed="false"
+                >
+                  <span class="lanyard-metal-clip pointer-events-none absolute left-1/2 top-[-26px] z-20 -translate-x-1/2" aria-hidden="true"></span>
+                  <span class="lanyard-card-inner block h-full w-full">
+                    <span class="lanyard-card-face lanyard-card-front absolute inset-0 block overflow-hidden rounded-[1.6rem] border border-white/45 bg-transparent shadow-[0_24px_60px_rgba(0,0,0,.34)]">
+                      <img src="assets/img/profile/harisriyoni.png" alt="Portrait of Haris Riyoni" class="lanyard-photo h-full w-full object-cover object-top">
+                    </span>
+                    <span class="lanyard-card-face lanyard-card-back absolute inset-0 block overflow-hidden rounded-[1.6rem] border border-white/35 bg-transparent shadow-[0_24px_60px_rgba(0,0,0,.34)]">
+                      <img src="assets/img/profile/harisriyoni.png" alt="Portrait of Haris Riyoni" class="lanyard-photo h-full w-full object-cover object-center">
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="about" class="px-5 py-24 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-[1180px]">
+          <div class="reveal about-section-heading text-center">
+            <p class="about-kicker">Profile / About Me</p>
+            <h2 class="about-display mt-4">
+              Design. Build. <span>Deliver.</span>
+            </h2>
+            <p class="about-heading-note mx-auto mt-4 max-w-xl">
+              Building experiences that feel simple on the surface because the
+              foundation is carefully engineered underneath.
+            </p>
+          </div>
+          <div
+            class="reveal grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center lg:gap-20"
+          >
+            <div class="about-portrait glass-panel glass-shine rounded-[2rem] p-3">
+              <img
+                src="assets/img/profile/harisriyoni.JPG"
+                alt="Haris Riyoni"
+                loading="lazy"
+                class="aspect-square w-full rounded-[1.5rem] object-cover object-top">
+              <div class="flex items-center justify-between px-3 py-4">
+                <span class="text-xs font-semibold text-slate-400"
+                  >Applied Informatics · ULBI</span
+                ><b class="text-sm text-cyan-200">3.48 / 4.00</b>
+              </div>
+              <div class="about-profile-float">
+                <img
+                  src="assets/img/profile/harisriyoni.png"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  class="about-profile-avatar">
+                <span class="min-w-0">
+                  <b class="block truncate text-sm text-white">Haris Riyoni</b>
+                  <small class="about-profile-status mt-1 flex items-center gap-1.5">
+                    <i aria-hidden="true"></i> Open to work
+                  </small>
+                </span>
+                <a href="#contact" class="about-hire-button ml-auto shrink-0">Hire me</a>
+              </div>
+            </div>
+            <div class="grid gap-4 lg:grid-rows-[1.12fr_.88fr]">
+              <div class="about-copy-card glass-panel rounded-[2rem] p-6 reveal sm:p-8">
+                <div class="flex items-center justify-between gap-4">
+                  <p class="section-label">About me</p>
+                  <span class="about-location"><i class="bi bi-geo-alt"></i> Indramayu, Indonesia</span>
+                </div>
+                <h3 class="about-copy-title mt-5 max-w-3xl">
+                  Backend Engineer &amp; Fullstack Developer building
+                  <span>digital experiences</span> on a strong foundation.
+                </h3>
+                <div class="about-copy-body mt-5 grid gap-4 sm:grid-cols-2">
+                  <p>
+                    I turn business needs into internal dashboards, REST APIs,
+                    and reliable operational systems.
+                  </p>
+                  <p>
+                    I work with Laravel, Golang Gin, Express.js, and relational
+                    databases to build products that are easy to maintain.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-mini-toolkit glass-panel rounded-[2rem] p-6 reveal delay-1 sm:p-7">
+                <div class="flex items-start justify-between gap-5">
+                  <div>
+                    <p class="about-mini-label">Mini toolkit</p>
+                    <h3 class="about-mini-title mt-2">The tools behind the work.</h3>
+                  </div>
+                  <span class="about-card-icon shrink-0"><i class="bi bi-command"></i></span>
+                </div>
+                <div class="about-stack-list mt-5">
+                  <span class="about-stack-chip"><i class="devicon-laravel-original colored"></i>Laravel</span>
+                  <span class="about-stack-chip"><i class="devicon-go-original-wordmark colored"></i>Go</span>
+                  <span class="about-stack-chip"><i class="devicon-php-plain colored"></i>PHP</span>
+                  <span class="about-stack-chip"><i class="devicon-javascript-plain colored"></i>JavaScript</span>
+                  <span class="about-stack-chip"><i class="devicon-mysql-original colored"></i>MySQL</span>
+                  <span class="about-stack-chip"><i class="devicon-docker-plain colored"></i>Docker</span>
+                  <span class="about-stack-chip"><i class="devicon-tailwindcss-original colored"></i>Tailwind</span>
+                  <span class="about-stack-chip"><i class="devicon-git-plain colored"></i>Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="glass-panel reveal tilt-card rounded-2xl p-5">
+              <b
+                data-count="1.5"
+                data-suffix="+"
+                class="font-display text-3xl text-cyan-200"
+                >1.5+</b
+              ><span class="mt-2 block text-xs text-slate-400"
+                >Years of professional experience</span
+              >
+            </div>
+            <div class="glass-panel reveal delay-1 tilt-card rounded-2xl p-5">
+              <b
+                data-count="7"
+                data-suffix="+"
+                class="font-display text-3xl text-cyan-200"
+                >7+</b
+              ><span class="mt-2 block text-xs text-slate-400"
+                >Web products and projects</span
+              >
+            </div>
+            <div class="glass-panel reveal delay-2 tilt-card rounded-2xl p-5">
+              <b data-count="3" class="font-display text-3xl text-cyan-200">3</b
+              ><span class="mt-2 block text-xs text-slate-400"
+                >Core backend ecosystems</span
+              >
+            </div>
+            <div class="glass-panel reveal delay-3 tilt-card rounded-2xl p-5">
+              <b data-count="3.48" class="font-display text-3xl text-cyan-200"
+                >3.48</b
+              ><span class="mt-2 block text-xs text-slate-400">GPA / 4.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="px-5 py-24 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-[1180px]">
+          <div class="reveal max-w-2xl">
+            <p class="section-label">Toolkit</p>
+            <h2
+              class="mt-4 font-display text-3xl font-extrabold tracking-[-.045em] text-white sm:text-5xl"
+            >
+              The technologies I use to build products.
+            </h2>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="glass-panel toolkit-card reveal rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="devicon-php-plain colored"></i><i class="devicon-javascript-plain colored"></i><i class="devicon-go-original-wordmark colored"></i><i class="devicon-python-plain colored"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Programming
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                PHP · JavaScript · Golang · Python
+              </p>
+            </div>
+            <div class="glass-panel toolkit-card reveal delay-1 rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="devicon-laravel-original colored"></i><i class="devicon-livewire-plain colored"></i><i class="devicon-express-original"></i><i class="devicon-go-original-wordmark colored"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Backend Engineering
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                Laravel · Livewire · Express.js · Gin Framework
+              </p>
+            </div>
+            <div class="glass-panel toolkit-card reveal delay-2 rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i><i class="devicon-tailwindcss-original colored"></i><i class="devicon-bootstrap-plain colored"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Frontend
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                HTML · CSS · Blade · Tailwind CSS
+              </p>
+            </div>
+            <div class="glass-panel toolkit-card reveal rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="devicon-mysql-original colored"></i><i class="devicon-postgresql-plain colored"></i><i class="devicon-docker-plain colored"></i><i class="devicon-git-plain colored"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Data &amp; Infrastructure
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                MySQL · PostgreSQL · Docker · Git
+              </p>
+            </div>
+            <div class="glass-panel toolkit-card reveal delay-1 rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="devicon-digitalocean-plain colored"></i><i class="devicon-heroku-plain colored"></i><i class="devicon-googlecloud-plain colored"></i><i class="devicon-linux-plain colored"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Cloud &amp; Deployment
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                DigitalOcean · Hostinger · Heroku · Google Cloud
+              </p>
+            </div>
+            <div class="glass-panel toolkit-card reveal delay-2 rounded-3xl p-6">
+              <div class="toolkit-icon-row"><i class="bi bi-git text-cyan-200"></i><i class="bi bi-kanban text-violet-200"></i><i class="bi bi-people text-peach-200"></i><i class="bi bi-lightbulb text-amber-200"></i></div>
+              <h3 class="mt-5 font-display text-lg font-bold text-white">
+                Collaboration
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                Problem Solving · Critical Thinking · Teamwork
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="px-5 py-24 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-[1180px]">
+          <div class="experience-section-heading reveal max-w-2xl">
+            <p class="section-label">Experience</p>
+            <h2
+              class="mt-4 font-display text-3xl font-extrabold tracking-[-.045em] text-white sm:text-5xl"
+            >
+              Professional <span class="experience-title-accent">experience.</span>
+            </h2>
+            <p class="mt-5 text-sm leading-7 text-slate-400 sm:text-base">
+              1.5+ years building internal systems, REST APIs, and
+              operational applications.
+            </p>
+          </div>
+          <div class="experience-layout mt-12 grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:gap-20">
+            <div>
+              <h3 class="experience-label flex items-center gap-3 text-lg font-bold text-white">
+                <i class="bi bi-briefcase text-cyan-200"></i> Work experience
+              </h3>
+              <div data-timeline-track class="experience-timeline relative mt-8 pl-7">
+                <div
+                  class="timeline-line"
+                >
+                  <span
+                    data-timeline-progress
+                    class="timeline-progress absolute left-0 top-0 w-full"
+                  ></span>
+                </div>
+                <article data-timeline-item class="experience-item-card reveal relative">
+                  <span
+                    data-timeline-dot
+                    class="timeline-dot absolute -left-[29px] top-1 size-3 rounded-full bg-cyan-200"
+                  ></span
+                  ><span
+                    class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                    >Nov 2025 — May 2026</span
+                  >
+                  <h4 class="experience-title mt-2 font-display text-lg font-bold text-white">
+                    Backend Engineer — Maganghub Kemnaker
+                  </h4>
+                  <p class="experience-company mt-1 text-sm font-semibold text-slate-300">
+                    PT Cerebrum Edukanesia Nusantara
+                  </p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">
+                    Laravel Livewire, Golang Gin, MySQL. Developed Markaz Base,
+                    RBAC, cross-platform module migrations, Helpdesk Center,
+                    Report Center, Rating Center, Excel Import/Export, Quick
+                    Message, Release Notes, plus Banner, Slider, and Region
+                    Placement modules for Jadinakes.
+                  </p>
+                  <a href="https://maganghub.kemnaker.go.id/be/v1/storage/uploads/certificates/2026/06/sertifikat_89396c3d-5434-4860-acf9-b1e6e2080199.pdf" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-xs font-extrabold text-cyan-200 hover:text-white"><i class="bi bi-patch-check"></i> View work certificate <i class="bi bi-arrow-up-right"></i></a>
+                </article>
+                <article data-timeline-item class="experience-item-card reveal delay-1 relative">
+                  <span
+                    data-timeline-dot
+                    class="timeline-dot absolute -left-[29px] top-1 size-3 rounded-full bg-violet-300"
+                  ></span
+                  ><span
+                    class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                    >Oct — Dec 2024</span
+                  >
+                  <h4 class="experience-title mt-2 font-display text-lg font-bold text-white">
+                    Backend Developer Intern
+                  </h4>
+                  <p class="experience-company mt-1 text-sm font-semibold text-slate-300">
+                    PT Hexagon Karyatama Indonesia
+                  </p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">
+                    Laravel REST API and MySQL. Designed the database, built the
+                    Internet Addiction Assessment (IAA) feature, optimized
+                    endpoint queries, and developed the CMS for jatidiri.app.
+                  </p>
+                  <a href="https://www.linkedin.com/in/harisriyoni/overlay/Position/2501228915/treasury/?profileId=ACoAADfea_IBaIXkyQbphFOXL9i4drpBPvxkvVU" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-xs font-extrabold text-cyan-200 hover:text-white"><i class="bi bi-linkedin"></i> View experience details <i class="bi bi-arrow-up-right"></i></a>
+                </article>
+              </div>
+            </div>
+            <div class="experience-aside space-y-4">
+              <div class="experience-side-card glass-panel reveal rounded-3xl p-6">
+                <h3 class="font-display text-lg font-bold text-white">
+                  Education
+                </h3>
+                <p class="mt-4 text-sm font-semibold text-slate-200">
+                  Applied Informatics — ULBI
+                </p>
+                <p class="mt-1 text-sm text-slate-400">
+                  2021 — 2025 · GPA 3.48 / 4.00
+                </p>
+                <p class="mt-4 text-sm leading-7 text-slate-400">
+                  Thesis: Comparative Experiment of Hybrid RF–SVM and Standalone
+                  Models for Smartphone Addiction Prediction using SAS-SV data.
+                </p>
+                <a
+                  href="https://eprints.ulbi.ac.id/3679/"
+                  target="_blank"
+                  rel="noopener"
+                  class="mt-4 inline-flex items-center gap-2 text-sm font-bold text-cyan-200 hover:text-white"
+                  >View thesis <i class="bi bi-arrow-up-right"></i
+                ></a>
+              </div>
+              <div class="experience-side-card glass-panel reveal delay-1 rounded-3xl p-6">
+                <h3 class="font-display text-lg font-bold text-white">
+                  Certifications &amp; publications
+                </h3>
+                <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-400">
+                  <li class="flex items-start justify-between gap-3"><span><i class="bi bi-patch-check mr-2 text-cyan-200"></i>Go-Lang Programming: Beginner to Advanced · Udemy · 2025</span><a href="https://www.udemy.com/certificate/UC-f570e93d-a4f6-445d-9365-79f32166331e/" target="_blank" rel="noopener" class="shrink-0 text-cyan-200 hover:text-white" aria-label="View Go-Lang certificate"><i class="bi bi-arrow-up-right"></i></a></li>
+                  <li class="flex items-start justify-between gap-3"><span><i class="bi bi-patch-check mr-2 text-cyan-200"></i>Learn Laravel Framework · Udemy · 2024</span><a href="https://www.udemy.com/certificate/UC-f59d5c28-1185-426a-9eb9-5e1d8af324c7/" target="_blank" rel="noopener" class="shrink-0 text-cyan-200 hover:text-white" aria-label="View Laravel certificate"><i class="bi bi-arrow-up-right"></i></a></li>
+                  <li class="flex items-start justify-between gap-3"><span><i class="bi bi-patch-check mr-2 text-cyan-200"></i>Introduction to JavaScript · Great Learning · 2023</span><a href="https://www.mygreatlearning.com/certificate/BDBYXTXX" target="_blank" rel="noopener" class="shrink-0 text-cyan-200 hover:text-white" aria-label="View JavaScript certificate"><i class="bi bi-arrow-up-right"></i></a></li>
+                  <li class="flex items-start justify-between gap-3"><span><i class="bi bi-patch-check mr-2 text-cyan-200"></i>Database Design · Oracle Academy · 2022</span><a href="https://www.linkedin.com/in/harisriyoni/overlay/Certifications/2027165421/treasury/?profileId=ACoAADfea_IBaIXkyQbphFOXL9i4drpBPvxkvVU" target="_blank" rel="noopener" class="shrink-0 text-cyan-200 hover:text-white" aria-label="Visit Oracle Academy"><i class="bi bi-arrow-up-right"></i></a></li>
+                  <li class="flex items-start justify-between gap-3"><span><i class="bi bi-journal-text mr-2 text-cyan-200"></i>Golang and JavaScript Integration for Correspondence Web Services · Gramedia · 2024</span><a href="https://ebooks.gramedia.com/id/buku/integrasi-golang-dan-javascript-dalam-pembuatan-web-service-surat-menyurat" target="_blank" rel="noopener" class="shrink-0 text-cyan-200 hover:text-white" aria-label="Read publication"><i class="bi bi-arrow-up-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="px-5 py-24 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-[1180px]">
+          <div class="work-section-heading reveal max-w-2xl">
+            <p class="section-label">Selected work</p>
+            <h2
+              class="mt-4 font-display text-3xl font-extrabold tracking-[-.045em] text-white sm:text-5xl"
+            >
+              A selection of <span class="work-title-accent">systems</span> I have built.
+            </h2>
+          </div>
+          <div class="work-grid mt-10 grid gap-5 md:grid-cols-2">
+            <article
+              class="glass-panel project-card work-card glass-shine reveal overflow-hidden rounded-3xl"
+            >
+              <div
+                class="h-56 overflow-hidden border-b border-white/10 bg-slate-900"
+              >
+                <img
+                  src="assets/img/portfolio/siperbak.png"
+                  alt="Siperbak application preview"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                  >Fullstack · May — July 2026</span
+                >
+                <h3 class="mt-3 font-display text-xl font-bold text-white">
+                  Siperbak
+                </h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">
+                  A request and inventory management application with admin and
+                  General Affairs dashboards.
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-4 text-[11px] text-slate-500"
+                >
+                  <div class="project-tech-list">
+                    <span class="project-tech" title="Laravel"><i class="devicon-laravel-plain colored" aria-hidden="true"></i><span>Laravel</span></span>
+                    <span class="project-tech" title="Filament"><i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i><span>Filament</span></span>
+                    <span class="project-tech" title="PostgreSQL"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i><span>PostgreSQL</span></span>
+                  </div>
+                  <b class="rounded-full bg-white/10 px-3 py-1 text-slate-300"
+                    >Internal</b
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="glass-panel project-card work-card glass-shine reveal delay-1 overflow-hidden rounded-3xl"
+            >
+              <div
+                class="h-56 overflow-hidden border-b border-white/10 bg-slate-900"
+              >
+                <img
+                  src="assets/img/portfolio/web-ibu-bayi.png"
+                  alt="Integrated Mother and Baby system preview"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                  >Fullstack · Nov 2025 — Jan 2026</span
+                >
+                <h3 class="mt-3 font-display text-xl font-bold text-white">
+                  Ibu Bayi Prematur
+                </h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">
+                  An internal web system for 24 community health centers and one
+                  central clinic with questionnaires, monitoring, and learning media.
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-4 text-[11px] text-slate-500"
+                >
+                  <div class="project-tech-list">
+                    <span class="project-tech" title="Laravel"><i class="devicon-laravel-plain colored" aria-hidden="true"></i><span>Laravel</span></span>
+                    <span class="project-tech" title="Blade"><i class="bi bi-filetype-html" aria-hidden="true"></i><span>Blade</span></span>
+                    <span class="project-tech" title="MySQL"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>MySQL</span></span>
+                  </div>
+                  <b class="rounded-full bg-white/10 px-3 py-1 text-slate-300"
+                    >Internal</b
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="glass-panel project-card work-card reveal overflow-hidden rounded-3xl">
+              <div class="h-52 overflow-hidden border-b border-white/10">
+                <img
+                  src="assets/img/portfolio/erp.png"
+                  alt="ERP Mining BISA preview"
+                  decoding="async"
+                  loading="lazy"
+                  class="h-full w-full object-cover">
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                  >Fullstack · Aug — Oct 2025</span
+                >
+                <h3 class="mt-3 font-display text-xl font-bold text-white">
+                  ERP Mining BISA
+                </h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">
+                  SCM and mining operations modules: Trips, Fuel Log, Daily Plan,
+                  Dispatch, and master data.
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-4 text-[11px] text-slate-500"
+                >
+                  <div class="project-tech-list">
+                    <span class="project-tech" title="Laravel"><i class="devicon-laravel-plain colored" aria-hidden="true"></i><span>Laravel</span></span>
+                    <span class="project-tech" title="Blade"><i class="bi bi-filetype-html" aria-hidden="true"></i><span>Blade</span></span>
+                    <span class="project-tech" title="MySQL"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>MySQL</span></span>
+                  </div>
+                  <b
+                    class="rounded-full bg-white/10 px-3 py-1 text-slate-300"
+                    >Internal</b
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="glass-panel project-card work-card reveal delay-1 overflow-hidden rounded-3xl"
+            >
+              <div class="h-52 overflow-hidden border-b border-white/10">
+                <img
+                  src="assets/img/portfolio/berkemah.png"
+                  alt="Berkemah application preview"
+                  decoding="async"
+                  loading="lazy"
+                  class="h-full w-full object-cover">
+              </div>
+              <div class="p-6">
+                <span
+                  class="text-[10px] font-extrabold uppercase tracking-widest text-cyan-200"
+                  >Fullstack · Aug — Sep 2025</span
+                >
+                <h3 class="mt-3 font-display text-xl font-bold text-white">
+                  Berkemah
+                </h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">
+                  Membership, payment gateway, checkout flow, coupons, content
+                  gating, and transaction history.
+                </p>
+                <div
+                  class="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-4 text-[11px] text-slate-500"
+                >
+                  <div class="project-tech-list">
+                    <span class="project-tech" title="Laravel"><i class="devicon-laravel-plain colored" aria-hidden="true"></i><span>Laravel</span></span>
+                    <span class="project-tech" title="Midtrans"><i class="bi bi-credit-card-2-front-fill" aria-hidden="true"></i><span>Midtrans</span></span>
+                    <span class="project-tech" title="MySQL"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>MySQL</span></span>
+                  </div>
+                  <a
+                    href="https://berkemah.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="font-bold text-cyan-200 hover:text-white"
+                    >Visit site <i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="relative overflow-hidden px-5 py-28 sm:px-8 lg:px-12"
+      >
+        <div
+          class="pointer-events-none absolute left-1/2 top-16 size-[34rem] -translate-x-1/2 rounded-full bg-violet-400/10 blur-3xl"
+        ></div>
+        <div class="relative mx-auto max-w-[900px] text-center">
+          <div class="reveal">
+            <p class="section-label">Let’s work together</p>
+            <h2
+              class="mx-auto mt-5 max-w-3xl font-display text-4xl font-extrabold leading-[1.05] tracking-[-.06em] text-white sm:text-6xl"
+            >
+              Let’s turn ideas into something meaningful.
+            </h2>
+            <p
+              class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base"
+            >
+              I’m open to work opportunities, web projects, and collaborations
+              that create real impact.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+              <a
+                href="mailto:imyharis@gmail.com"
+                class="magnetic solid-button inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-extrabold"
+                >Contact me <i class="bi bi-arrow-up-right"></i></a
+              ><a
+                href="https://www.linkedin.com/in/harisriyoni"
+                target="_blank"
+                rel="noopener"
+                class="magnetic outline-button inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-extrabold"
+                ><i class="bi bi-linkedin"></i> LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="mt-14 grid gap-3 text-left sm:grid-cols-3">
+            <a
+              href="mailto:imyharis@gmail.com"
+              class="glass-panel reveal rounded-3xl p-5 hover:-translate-y-1"
+              ><span
+                class="grid size-10 place-items-center rounded-2xl bg-cyan-200/10 text-lg text-cyan-200"
+                ><i class="bi bi-envelope"></i></span
+              ><span
+                class="mt-5 block text-[10px] font-extrabold uppercase tracking-widest text-slate-500"
+                >Email</span
+              ><b class="mt-2 block break-all text-sm text-white"
+                >imyharis@gmail.com</b
+              ></a
+            ><a
+              href="tel:+6285860149271"
+              class="glass-panel reveal delay-1 rounded-3xl p-5 hover:-translate-y-1"
+              ><span
+                class="grid size-10 place-items-center rounded-2xl bg-violet-300/10 text-lg text-violet-200"
+                ><i class="bi bi-telephone"></i></span
+              ><span
+                class="mt-5 block text-[10px] font-extrabold uppercase tracking-widest text-slate-500"
+                >Phone</span
+              ><b class="mt-2 block text-sm text-white">+62&nbsp;858&#8209;6014&#8209;9271</b></a
+            ><a
+              href="https://github.com/harisriyoni"
+              target="_blank"
+              rel="noopener"
+              class="glass-panel reveal delay-2 rounded-3xl p-5"
+              ><span
+                class="grid size-10 place-items-center rounded-2xl bg-orange-200/10 text-lg text-orange-200"
+                ><i class="bi bi-github"></i></span
+              ><span
+                class="mt-5 block text-[10px] font-extrabold uppercase tracking-widest text-slate-500"
+                >Github</span
+              ><b class="mt-2 block text-sm text-white"
+                >github.com/harisriyoni</b
+              ></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Footer" class="footer-shell relative overflow-hidden border-t border-white/10 px-5 py-14 sm:px-8 lg:px-12">
+      <div class="footer-aurora pointer-events-none absolute -right-32 top-0 size-[26rem] rounded-full"></div>
+      <div class="footer-aurora footer-aurora-violet pointer-events-none absolute -left-40 bottom-0 size-[22rem] rounded-full"></div>
+      <div class="relative mx-auto max-w-[1180px]">
+        <div class="grid gap-12 md:grid-cols-[1.15fr_.85fr] md:gap-20">
+          <div>
+            <span class="footer-kicker inline-flex items-center gap-2 rounded-full border border-cyan-200/15 bg-cyan-200/[.06] px-3 py-2 text-[10px] font-extrabold uppercase tracking-[.18em] text-cyan-100/75">
+              <i class="bi bi-stars text-cyan-200"></i> Personal portfolio
+            </span>
+            <h2 class="mt-5 max-w-xl font-display text-3xl font-extrabold leading-tight tracking-[-.05em] text-white sm:text-4xl">
+              Let’s build something useful.
+            </h2>
+            <p class="mt-4 max-w-lg text-sm leading-7 text-slate-400">
+              Clean backends, lightweight interfaces, and digital solutions ready to grow.
+            </p>
+            <div class="mt-7 flex flex-wrap items-center gap-3">
+              <a href="mailto:imyharis@gmail.com" class="solid-button inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold">Start a conversation <i class="bi bi-arrow-up-right"></i></a>
+              <a href="https://github.com/harisriyoni" target="_blank" rel="noopener" class="footer-social grid size-11 place-items-center rounded-full border border-white/10 text-slate-300 hover:text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/harisriyoni" target="_blank" rel="noopener" class="footer-social grid size-11 place-items-center rounded-full border border-white/10 text-slate-300 hover:text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:imyharis@gmail.com" class="footer-social grid size-11 place-items-center rounded-full border border-white/10 text-slate-300 hover:text-white" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+          <div class="md:pt-2">
+            <p class="section-label">Explore</p>
+            <nav class="mt-5 grid grid-cols-2 gap-x-6 gap-y-4 text-sm font-bold text-slate-400" aria-label="Footer links">
+              <a href="#hero" class="footer-link">Home <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#about" class="footer-link">About <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#resume" class="footer-link">Experience <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#projects" class="footer-link">Projects <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#contact" class="footer-link">Contact <i class="bi bi-arrow-up-right"></i></a>
+              <a href="assets/cv/haris-riyoni-cv.pdf" target="_blank" rel="noopener" class="footer-link">Download Resume <i class="bi bi-download"></i></a>
+            </nav>
+            <div class="footer-status mt-8 inline-flex items-center gap-2 rounded-full border border-emerald-300/15 bg-emerald-300/[.05] px-3 py-2 text-[10px] font-extrabold uppercase tracking-[.15em] text-emerald-200/80">
+              <span class="footer-status-dot"></span> Open to work · Indonesia
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col gap-4 border-t border-white/10 pt-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2026 <strong class="text-white">Haris Riyoni</strong><span class="mx-2 text-slate-700">&middot;</span>Built with care for the web.</p>
+          <a href="#hero" class="footer-backtop font-bold text-slate-400 hover:text-cyan-200">Back to top <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <div hidden>
+      <div
+        class="mx-auto flex max-w-[1180px] flex-col gap-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p>
+          © 2026 <strong class="text-white">Haris Riyoni</strong
+          ><span class="mx-2 text-slate-700">·</span>Backend Engineer ·
+          Fullstack Developer
+        </p>
+        <nav class="flex items-center gap-5" aria-label="Legacy footer">
+          <a href="#hero" class="font-bold hover:text-cyan-200"
+            >Back to top <i class="bi bi-arrow-up-right"></i></a
+          ><a
+            href="mailto:imyharis@gmail.com"
+            class="font-bold hover:text-cyan-200"
+            >Email me</a
+          >
+        </nav>
+      </div>
+    </div>
+    <a
+      data-scroll-top
+      href="#hero"
+      class="glass-nav fixed bottom-5 right-5 z-40 grid size-11 place-items-center rounded-full text-cyan-200 hover:bg-white/15"
+      aria-label="Back to top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+    <script src="assets/js/site.js?v=theme-light-perf-2" defer></script>
+    <script src="assets/js/lanyard.js?v=lanyard-viewport-2" defer></script>
+  </body>
 </html>

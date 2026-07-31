@@ -1,0 +1,34 @@
+{
+  "name": "harisriyoni-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio website for Haris Riyoni",
+  "scripts": {
+    "dev": "npm run dev:css",
+    "dev:css": "tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch",
+    "dev:js": "npm run dev:site & npm run dev:lanyard",
+    "dev:site": "esbuild ./src/site.js --bundle --format=iife --sourcemap --outfile=./assets/js/site.js --watch",
+    "dev:lanyard": "esbuild ./src/lanyard-entry.jsx --bundle --format=iife --outfile=./assets/js/lanyard.js --watch",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify",
+    "build:js": "npm run build:site && npm run build:lanyard",
+    "build:site": "esbuild ./src/site.js --bundle --format=iife --minify --outfile=./assets/js/site.js",
+    "build:lanyard": "esbuild ./src/lanyard-entry.jsx --bundle --format=iife --minify --outfile=./assets/js/lanyard.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "esbuild": "^0.28.1",
+    "gsap": "^3.15.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.7.0",
+    "@react-three/rapier": "^2.2.0",
+    "geist": "^1.7.2",
+    "meshline": "^3.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  }
+}

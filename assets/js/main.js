@@ -16,8 +16,9 @@
 
   function headerToggle() {
     document.querySelector('#header').classList.toggle('header-show');
-    headerToggleBtn.classList.toggle('bi-list');
-    headerToggleBtn.classList.toggle('bi-x');
+    const headerToggleIcon = headerToggleBtn.querySelector('i') || headerToggleBtn;
+    headerToggleIcon.classList.toggle('bi-list');
+    headerToggleIcon.classList.toggle('bi-x');
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
