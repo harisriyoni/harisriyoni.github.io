@@ -154,7 +154,7 @@
     white-space: nowrap;
     transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, max-width .35s cubic-bezier(.2,.8,.2,1), padding .35s ease;
   }
-  [data-desktop-nav] .nav-link span {
+  [data-desktop-nav] .nav-link > span:not([data-icon]) {
     max-width: 0;
     overflow: hidden;
     opacity: 0;
@@ -165,7 +165,7 @@
     justify-content: flex-start;
     max-width: 9rem;
   }
-  [data-desktop-nav] .nav-link.is-active span {
+  [data-desktop-nav] .nav-link.is-active > span:not([data-icon]) {
     max-width: 5.5rem;
     opacity: 1;
     transform: translateX(0);
