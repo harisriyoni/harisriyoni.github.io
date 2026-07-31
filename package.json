@@ -11,8 +11,9 @@
     "dev:lanyard": "esbuild ./src/lanyard-entry.jsx --bundle --format=iife --outfile=./assets/js/lanyard.js --watch",
     "build": "npm run build:css && npm run build:js",
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify",
-    "build:js": "npm run build:site && npm run build:lanyard",
+    "build:js": "npm run build:site && npm run build:icons && npm run build:lanyard",
     "build:site": "esbuild ./src/site.js --bundle --format=iife --minify --outfile=./assets/js/site.js",
+    "build:icons": "esbuild ./src/icons-entry.jsx --bundle --format=iife --minify --outfile=./assets/js/icons.js",
     "build:lanyard": "esbuild ./src/lanyard-entry.jsx --bundle --format=iife --minify --outfile=./assets/js/lanyard.js"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "@react-three/fiber": "^9.7.0",
     "@react-three/rapier": "^2.2.0",
     "geist": "^1.7.2",
+    "lucide-react": "^1.28.0",
     "meshline": "^3.3.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

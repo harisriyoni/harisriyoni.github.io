@@ -16,8 +16,7 @@ const setTheme = (theme, persist = true) => {
   document.documentElement.dataset.theme = nextTheme;
   themeToggles.forEach((toggle) => {
     const icon = q("[data-theme-icon]", toggle);
-    icon?.classList.toggle("bi-sun-fill", !isLight);
-    icon?.classList.toggle("bi-moon-stars-fill", isLight);
+    if (icon) icon.dataset.icon = isLight ? "moonStar" : "sun";
     toggle.setAttribute("aria-pressed", String(isLight));
     toggle.setAttribute("aria-label", isLight ? "Enable dark mode" : "Enable light mode");
     toggle.setAttribute("title", isLight ? "Enable dark mode" : "Enable light mode");
@@ -99,15 +98,13 @@ const menuIcon = q("[data-menu-icon]");
 function closeMenu() {
   mobileMenu?.classList.add("hidden");
   menuButton?.setAttribute("aria-expanded", "false");
-  menuIcon?.classList.add("bi-list");
-  menuIcon?.classList.remove("bi-x-lg");
+  if (menuIcon) menuIcon.dataset.icon = "menu";
 }
 
 menuButton?.addEventListener("click", () => {
   const open = mobileMenu?.classList.toggle("hidden") === false;
   menuButton.setAttribute("aria-expanded", String(open));
-  menuIcon?.classList.toggle("bi-list", !open);
-  menuIcon?.classList.toggle("bi-x-lg", open);
+  if (menuIcon) menuIcon.dataset.icon = open ? "x" : "menu";
 });
 qa("[data-mobile-menu] a").forEach((link) => link.addEventListener("click", closeMenu));
 
