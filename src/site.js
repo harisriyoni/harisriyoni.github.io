@@ -112,7 +112,12 @@ const sections = qa("main section[id]");
 const navLinks = qa("[data-nav-link]");
 const updateActiveLink = () => {
   const current = sections.reduce((active, section) => window.scrollY + 180 >= section.offsetTop ? section.id : active, "hero");
-  navLinks.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === `#${current}`));
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${current}`;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
 };
 document.addEventListener("scroll", updateActiveLink, { passive: true });
 updateActiveLink();

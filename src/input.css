@@ -145,6 +145,8 @@
     background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(139,244,233,.06));
     box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 0 18px rgba(139,244,233,.05);
   }
+  .nav-contact-button { transition: color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
+  .nav-contact-button.is-active { color: #081014; background: var(--color-cyan-glow); box-shadow: 0 0 24px rgba(139,244,233,.2); transform: translateY(-1px); }
   [data-desktop-nav] .nav-link {
     justify-content: center;
     max-width: 2.75rem;
