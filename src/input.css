@@ -204,6 +204,7 @@
     background: #51e19d;
     box-shadow: 0 0 0 .25rem rgba(81,225,157,.1);
     content: "";
+    animation: status-dot-pulse 1.8s ease-in-out infinite;
   }
   .hero-status { box-shadow: 0 0 0 5px rgba(139,244,233,.025), inset 0 1px 0 rgba(255,255,255,.08); animation: status-breathe 3.5s ease-in-out infinite; }
   .hero-title { text-wrap: balance; }
@@ -219,7 +220,7 @@
   .about-profile-float { position: absolute; right: 1.5rem; bottom: 4.4rem; left: 1.5rem; z-index: 2; display: flex; align-items: center; gap: .7rem; min-height: 4.45rem; padding: .65rem .7rem; border: 1px solid rgba(255,255,255,.16); border-radius: 1.2rem; background: rgba(11,14,18,.82); box-shadow: 0 18px 38px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.12); backdrop-filter: blur(18px) saturate(135%); -webkit-backdrop-filter: blur(18px) saturate(135%); }
   .about-profile-avatar { width: 2.55rem; height: 2.55rem; flex: 0 0 auto; border: 2px solid rgba(255,255,255,.78); border-radius: 999px; object-fit: cover; object-position: top; box-shadow: 0 0 0 .25rem rgba(139,244,233,.1); }
   .about-profile-status { color: #51e19d; font-size: .66rem; white-space: nowrap; }
-  .about-profile-status i { width: .4rem; height: .4rem; border-radius: 999px; background: currentColor; box-shadow: 0 0 0 .2rem rgba(81,225,157,.12); }
+  .about-profile-status i { width: .4rem; height: .4rem; border-radius: 999px; background: currentColor; box-shadow: 0 0 0 .2rem rgba(81,225,157,.12); animation: status-dot-pulse 1.8s ease-in-out infinite; }
   .about-hire-button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.45rem; padding: 0 .9rem; border-radius: .75rem; color: #091116; background: #f6fafc; font-size: .76rem; font-weight: 800; }
   .about-hire-button:hover { color: #091116; background: var(--color-cyan-glow); transform: translateY(-2px); }
   .about-copy-card { display: flex; flex-direction: column; justify-content: center; }
@@ -323,7 +324,7 @@
   .footer-link i { color: rgba(139,244,233,.7); font-size: .7rem; opacity: .65; transition: transform .25s ease, opacity .25s ease; }
   .footer-link:hover { color: #fff; transform: translateX(3px); }
   .footer-link:hover i { opacity: 1; transform: translate(2px, -2px); }
-  .footer-status-dot { width: .42rem; height: .42rem; border-radius: 999px; background: #51e19d; box-shadow: 0 0 0 .22rem rgba(81,225,157,.1), 0 0 12px rgba(81,225,157,.65); }
+  .footer-status-dot { width: .42rem; height: .42rem; border-radius: 999px; background: #51e19d; box-shadow: 0 0 0 .22rem rgba(81,225,157,.1), 0 0 12px rgba(81,225,157,.65); animation: status-dot-pulse 1.8s ease-in-out infinite; }
   .footer-backtop { transition: color .25s ease, transform .25s ease; }
   .footer-backtop:hover { transform: translateY(-2px); }
   .hero-card-shell { overflow: visible !important; }
@@ -477,6 +478,11 @@
 @keyframes gradient-shift { from { background-position: 0% 50%; } to { background-position: 100% 50%; } }
 @keyframes project-sheen { from { background-position: 220% 0; } to { background-position: -30% 0; } }
 @keyframes status-breathe { 0%, 100% { box-shadow: 0 0 0 5px rgba(139,244,233,.025), inset 0 1px 0 rgba(255,255,255,.08); } 50% { box-shadow: 0 0 0 8px rgba(139,244,233,.045), inset 0 1px 0 rgba(255,255,255,.12); } }
+@keyframes status-dot-pulse {
+  0%, 100% { opacity: .52; transform: scale(.82); box-shadow: 0 0 0 .14rem rgba(81,225,157,.08), 0 0 4px rgba(81,225,157,.28); }
+  42% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 .28rem rgba(81,225,157,.15), 0 0 16px rgba(81,225,157,.82); }
+  62% { opacity: .9; transform: scale(.94); box-shadow: 0 0 0 .2rem rgba(81,225,157,.11), 0 0 10px rgba(81,225,157,.58); }
+}
 @keyframes footer-aurora-drift { 0%, 100% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(-18px, 18px, 0) scale(1.12); } }
 @keyframes nav-liquid-shift { 0%, 100% { transform: translateX(-18%) rotate(18deg); opacity: .2; } 45% { transform: translateX(300%) rotate(18deg); opacity: .7; } 70% { transform: translateX(300%) rotate(18deg); opacity: 0; } }
 @keyframes role-word-in { from { opacity: 0; transform: translateY(.6em); } to { opacity: 1; transform: translateY(0); } }
